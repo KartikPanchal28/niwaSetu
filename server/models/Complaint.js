@@ -89,4 +89,4 @@ const ComplaintSchema = new mongoose.Schema({
   strict: false
 });
 
-export const Complaint = mongoose.model('Complaint', ComplaintSchema);
+export const Complaint = mongoose.models.Complaint || mongoose.model('Complaint', ComplaintSchema);
